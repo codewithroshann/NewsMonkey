@@ -38,7 +38,7 @@ selectedValue:"in",
   render() {
     return (
       <>
-        <HashRouter>
+        <HashRouter >
           <LoadingBar
             height={"3px"}
             color='#f11946'
