@@ -33,7 +33,7 @@ export default class App extends Component {
   render() {
     return (
       <>
-      <HashRouter>
+      <HashRouter basename='/NewsMonkey'>
         <LoadingBar
           height={"3px"}
           color='#f11946'
@@ -43,7 +43,7 @@ export default class App extends Component {
         <Navbar  onSelectChange={this.handleSelectChange} />
 <Routes> 
 
-        <Route exact path='/home' element={<News  setProgress={this.setProgress} key={"general"} imageUrl="https://media.gettyimages.com/id/184625088/photo/breaking-news-headline.jpg?s=612x612&w=0&k=20&c=0WNsHBZ8Yu2YeTUjVP8xY05Ist60I00iZHmTOnQErHk=" category="general" />} />
+        <Route exact path='/NewsMonkey' element={<News  setProgress={this.setProgress} key={"general"} imageUrl="https://media.gettyimages.com/id/184625088/photo/breaking-news-headline.jpg?s=612x612&w=0&k=20&c=0WNsHBZ8Yu2YeTUjVP8xY05Ist60I00iZHmTOnQErHk=" category="general" />} />
         <Route exact path='/general' element={<News country={this.state.selectedValue} setProgress={this.setProgress} imageUrl="https://media.gettyimages.com/id/184625088/photo/breaking-news-headline.jpg?s=612x612&w=0&k=20&c=0WNsHBZ8Yu2YeTUjVP8xY05Ist60I00iZHmTOnQErHk=" key={"general"} category="general" />} />
         <Route exact path='/sports' element={<News country={this.state.selectedValue} setProgress={this.setProgress} imageUrl="https://img.freepik.com/free-vector/abstract-sport-background-flat-style_23-2148220193.jpg?w=900&t=st=1719849274~exp=1719849874~hmac=00286c194d77f8b617c9732bdbaf3285b0b75535bfb1f4f7cf09b0aafeaf5658" key={"sports"} category="sports" />} />
         <Route exact path='/health' element={<News country={this.state.selectedValue} setProgress={this.setProgress} key={"health"} imageUrl="https://media.istockphoto.com/id/1032637132/photo/a-cup-of-coffee-glasses-and-newspaper-titled-health-medical.jpg?s=1024x1024&w=is&k=20&c=0u4SVDQ0yzHENGAVQCT7IG-QYO9h6bVvr4VDg0f6nHE=" category="health" />} />
