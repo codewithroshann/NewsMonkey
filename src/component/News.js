@@ -30,7 +30,7 @@ export default class News extends Component {
             page: 1
         }
         this.updateNews(this.props.country);
-        document.title = `NewsMonkey.in-${this.capitalize(this.props.category)}`
+        document.title = `NewsMonkey-${this.capitalize(this.props.category)}`
 
     }
 
@@ -83,7 +83,7 @@ export default class News extends Component {
 
         return (
             <>
-                <h1 className='headline fw-bold text-center my-4' style={{ position: "sticky", top: "86px", backgroundColor: "#fff", padding: "10px 20px", borderBottom: "1px solid #ccc", zIndex: "5" }}>Top {this.capitalize(this.props.category)} Headlines-{this.props.country?this.props.country.slice(3, 20):"India"}</h1>
+                <h1 className='headline fw-bold text-center my-4' style={{ position: "sticky", top: "86px", backgroundColor: "#fff", padding: "10px 20px", borderBottom: "1px solid #ccc", zIndex: "5" }}>Top {this.capitalize(this.props.category)} Headlines-{this.props.country?this.props.country.slice(3,20):"India"}</h1>
                 {/* {this.state.loading === true ? <Spinner /> : ""} */}
 
                 <InfiniteScroll
