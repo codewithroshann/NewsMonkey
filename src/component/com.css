@@ -1,3 +1,7 @@
+.countainer{
+    transition: all 0.2s ease-in-out;
+}
+
 .card-img-top{
     height: 265px !important;
 }
@@ -14,7 +18,8 @@
         
     }
     .headline{
-        font-size: 31px !important;
+        font-size: 31
+        px !important;
 
     }
     

@@ -39,8 +39,8 @@ export default class App extends Component {
           progress={this.state.progress}
         // onLoaderFinished={this.setProgress(0)}
         />
-        <Navbar onSelectChange={this.handleSelectChange} />
-<Routes>
+        <Navbar  onSelectChange={this.handleSelectChange} />
+<Routes> 
 
         <Route exact path='/' element={<News setProgress={this.setProgress} key={"general"} imageUrl="https://media.gettyimages.com/id/184625088/photo/breaking-news-headline.jpg?s=612x612&w=0&k=20&c=0WNsHBZ8Yu2YeTUjVP8xY05Ist60I00iZHmTOnQErHk=" category="general" />} />
         <Route exact path='/general' element={<News country={this.state.selectedValue} setProgress={this.setProgress} imageUrl="https://media.gettyimages.com/id/184625088/photo/breaking-news-headline.jpg?s=612x612&w=0&k=20&c=0WNsHBZ8Yu2YeTUjVP8xY05Ist60I00iZHmTOnQErHk=" key={"general"} category="general" />} />

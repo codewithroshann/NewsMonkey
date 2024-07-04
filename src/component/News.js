@@ -30,7 +30,7 @@ export default class News extends Component {
             page: 1
         }
         this.updateNews(this.props.country);
-        document.title = `NewsMonkey-${this.capitalize(this.props.category)}`
+        document.title = `NewsMonkey.in-${this.capitalize(this.props.category)}`
 
     }
 

@@ -7,7 +7,7 @@ export default class NewsItem extends Component {
         return (
             <>
 
-                <div className="card my-3 position-relative " style={{ width: " 22rem" }}>
+                <div className="card my-3 position-relative " style={{ width: " 22rem",flex:"1" }}>
 
                     <span className="position-absolute top-0 end-0 badge  bg-danger" >{source}</span>
                     <img src={imageUrl} className="card-img-top" alt="" />
